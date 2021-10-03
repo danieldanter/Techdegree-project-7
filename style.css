@@ -124,19 +124,19 @@ main {
 }
 
 @media (min-width: 768px) {
-    .traffic, .social, .main-header, .alert {
+    .traffic, .social, .main-header, .alert, .recent, .members, .settings, .message {
     grid-column: 1 / span 2;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .daily, .members, .message {
     grid-column: 1 / span 1;
     }
 }
 
-@media (min-width: 768px) {
-    .mobile, .activity, .settings {
+@media (min-width: 1024px) {
+    .mobile, .recent, .settings {
     grid-column: 2 / span 1;
     }
 }
@@ -264,8 +264,45 @@ main {
 /* ===================================== 
    new members
 ======================================== */
+.members, .recent{
+    display: flex;
+    flex-direction: column;
+    
+}
+.members h3, .recent h3{
+    align-self: center;
+    width: 90%;
+    
+}
 
 
+.members-container{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: tomato;
+    
+    border-bottom: solid 1px black;
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+.members-container p, .members-text p {
+    margin: 0;
+    padding: 0;
+}
+
+.members-text a{
+    text-decoration: none;
+    
+}
+
+.profile-image{
+    width: 80px;
+    border-radius: 50%;
+}
 
 
 
@@ -283,6 +320,7 @@ main {
         gap: 20px;
     }
 
+    /* ************* social ************ */
     .social h3{
         width: 100%;
         padding-left: 10px;
@@ -304,7 +342,22 @@ main {
         
     }
 
+    /* ************* members ************ */
 
+    .members-container{
+        flex-direction: row;
+        gap: 20px;
+        text-align: start;
+        align-content: space-between;
+        
+        
+    }
+    .members-text{
+        background-color: chartreuse;
+        flex-grow: 1;
+    }
+
+    
 
 }
 
