@@ -304,6 +304,92 @@ main {
     border-radius: 50%;
 }
 
+/* ===================================== 
+   meassage
+======================================== */
+
+.message{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.message h3{
+    align-self: center;
+    width: 90%;
+    
+}
+
+.widget-container{
+    align-self: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.widget-container input {
+    height: 40px ;
+    width: 100%;
+    background-color: rgb(228, 222, 222);
+    border-radius: 5px;
+}
+
+.widget-container textarea {
+    height: 120px ;
+    width: 100%;
+    background-color: rgb(228, 222, 222);
+    border-radius: 5px;
+}
+
+.button-primary {
+    height: 40px ;
+    color: white;
+    background-color: #7e72b4;
+    border-radius: 5px;
+}
+
+/* ===================================== 
+   settings
+======================================== */
+.settings{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.settings h3{
+    align-self: center;
+    width: 90%;
+    
+}
+
+.setting-container{
+    align-self: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.form-field {
+    height: 40px ;
+    width: 100%;
+    background-color: rgb(228, 222, 222);
+    border-radius: 5px;
+}
+
+.settings-button{
+    display: flex;
+    gap: 10px ;
+}
+
+.settings-button button{
+    flex-grow: 1;
+}
 
 
 /* ===================================== 
@@ -358,6 +444,7 @@ main {
     }
 
     
+    
 
 }
 
@@ -393,6 +480,3 @@ main {
     background-color: turquoise;
 }
 
-.settings {
-    background-color: yellow;
-}
