@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebApp</title>
     <link href="style.css" rel="stylesheet">
+    <link href="toggle-switch.css" rel="stylesheet">
+</head>
 </head>
 
 <body class="grid-container">
@@ -183,8 +185,23 @@
             <h3>Settings</h3>
 
             <form class="setting-container">
+
                 <!-- custom CSS toggle code-->
+                <div class="switch-box">
+                    <p>Send Email notifications</p>
+                    <div>
+                        <input type="checkbox" class="toggle" id = "rounded">
+                        <label for="rounded" data-checked = "on" data-unchecked="off"></label>
+                    </div>
+                </div>
                 <!-- custom CSS toggle code-->
+                <div class="switch-box">
+                    <p>Send Profile to Pulic</p>
+                        <div>
+                            <input type="checkbox" class="toggle" id = "rounded2">
+                            <label for="rounded2" data-checked = "on" data-unchecked="off"></label>
+                        </div>
+                    </div>
                 <select class="form-field" id="timezone">
                 <option disabled selected>Select a Timezone</option>
                 <option>Eastern</option>
