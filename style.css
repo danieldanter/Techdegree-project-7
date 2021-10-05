@@ -182,6 +182,37 @@ main {
     background-color: rgb(228, 222, 222);
 }
 
+/* ===================================== 
+   alaret banner
+======================================== */
+.alert-banner{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #6856b8;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;    
+}
+
+.alert-banner:hover{
+    cursor: pointer;
+
+}
+
+/* ===================================== 
+   traffic
+======================================== */
+
+.traffic {
+    background-color: white;
+}
+
+
 
 /* ===================================== 
    social Stats
@@ -553,13 +584,9 @@ input[type=checkbox].toggle:checked + label::before{
 
 
 
-.alert {
-    background-color:tomato;
-}
 
-.traffic {
-    background-color: yellow;
-}
+
+
 
 
 .daily{
