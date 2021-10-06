@@ -41,12 +41,18 @@ header h1{
 .bell {
     width: 45px;
     padding-top: 10px;
-    padding-right: 20px;
-    border-right: solid white 1px;
-    
-    
-    
+    padding-right: 20px;     
 }
+
+.border {
+    border-left: 1px solid white;
+    height: 50px;
+    position:absolute;
+    right: 210px;
+}
+.bell:hover {
+    transform: scale(1.2);
+  }
 
 .right-side img{
     border-radius: 100px;
@@ -266,8 +272,9 @@ main {
 ======================================== */
 
 .daily{
-    margin: 10px;
+    padding: 10px;
     border-bottom: solid black 1px;
+    
 }
 
 /* ===================================== 
@@ -278,14 +285,12 @@ main {
 .mobile{
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    background-color: chartreuse;
+    padding: 10px;
     border-bottom: solid black 1px
 }
 
 .mobile h3{
-    padding-left: 10px;
-    background-color: coral;
+    padding-left: 10px; 
     padding-bottom: 0;
     margin-bottom: 0;
 
@@ -293,7 +298,6 @@ main {
 
 .mobile .widget-container-half{
     align-self: center;
-    background-color: cornflowerblue;
     width: 500px;
     height: 400px;
     margin-left: 50px;
@@ -395,6 +399,8 @@ main {
 .members, .recent{
     display: flex;
     flex-direction: column;
+    border-bottom: solid 1px black;
+    
     
     
 }
@@ -412,6 +418,8 @@ main {
     align-items: center;
     text-align: center;
     border-bottom: solid 1px black;
+    
+    
     width: 90%;
     padding-bottom: 10px;
     margin-top: 10px;
@@ -443,7 +451,8 @@ main {
 .message{
     display: flex;
     flex-direction: column;
-
+   
+        
 }
 
 .message h3{
@@ -469,7 +478,7 @@ main {
 }
 
 .widget-container textarea {
-    height: 120px ;
+    height: 140px ;
     width: 100%;
     background-color: rgb(228, 222, 222);
     border-radius: 5px;
@@ -635,6 +644,13 @@ input[type=checkbox].toggle:checked + label::before{
         gap: 20px;
     }
 
+    /* ************* dayly traffic ************ */
+
+    .daily{
+        
+        border-right: solid black 1px;
+    }
+
     /* ************* social ************ */
     .social h3{
         width: 100%;
@@ -667,6 +683,13 @@ input[type=checkbox].toggle:checked + label::before{
         
         
     }
+
+    .members, .recent{
+        
+        border-right: solid 1px black;
+        
+        
+    }
     .members-text{
         flex-grow: 1;
     }
@@ -680,6 +703,14 @@ input[type=checkbox].toggle:checked + label::before{
         display: inline;
         color: #7e72b4;
     }
+
+     /* ************* message user ************ */
+
+    .message{
+        border-right: solid 1px black;
+        
+    }
+
 
 }
 
